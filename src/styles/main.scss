@@ -20,7 +20,7 @@
   max-width: 1000px;
   align-self: center;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 240px;
   margin-right: 150px;
   background-color: rgb(141, 38, 2);
   // display: flex;
@@ -75,15 +75,250 @@
 
 }
 
-h1 {
+h1{
+  color: white;
+  font-family: American sans-serif;
+  font-size: 30px;
+  margin-bottom: 280px;
+  text-align: center;
+  position: absolute;
+}
+
+h2{
   color: white;
   font-size: 30px;
+  text-align: center;
+  margin-top: 200px;
+  position: absolute;
 }
 
-.links {
+.links{
+  display: flex;
+  margin-bottom: 50px;
+  align-content: center;
+  position: absolute;
+  background-image: radial-gradient(circle, (rgb(255, 1, 255, 0.6), rgb(255, 1, 255, 0.3), rgb(255, 1, 255, 0)));
+  height: 160px;
+}
+
+.logo{
+  height: 150px;
+  width: 150px;
+  padding: 20px;
+  margin-bottom: 130px;
+}
+
+#logo2 {
+  border-radius: 20%;
+}
+
+.contact{
+  width: 1000px;
+  height: 100%;
+}
+
+.email{
+  position: absolute;
+  text-align: center;
+  padding-top: 36px;
+  color: white;
+  margin-top: 430px;
+  background-image: radial-gradient(circle, (rgb(168, 181, 224, 0.8), rgb(168, 181, 224, 0.5), rgb(168, 181, 224, 0)));
+  height: 160px;
+  width: 1200px;
+}
+
+.education{
+  display: flex;
+  flex-direction: column;
+  padding-top: 600px;
+}
+
+
+// blue: rgb(168, 181, 224)
+// pink: rgb(255, 0, 255)
+// grey: rgb(103, 104, 106)
+// orange: rgb(142, 40, 5)
+
+// for the test:
+
+/* Popup style */
+// .popup-box {
+//   position: fixed;
+//   background: #00000050;
+//   width: 100%;
+//   height: 100vh;
+//   top: 0;
+//   left: 0;
+//   padding-top: 100px;
+// }
+
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: 100%;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+.closedBox {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(255, 0, 255, 0.5);
+  border-radius: 150px;
+  // margin: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 60px;
+}
+
+.backBox {
+  height: 250px;
+  width: 250px;
+  background-color: rgba(142, 40, 9, 0.3);
+  position: relative;
+  border-radius: 170px;
+  margin: -20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+#backBox1 {
+  margin-bottom: 80px;
+}
+
+#box2 {
+background-color: rgb(168, 181, 224);
+}
+#backBox2 {
+  background-color: rgba(255, 0, 255, 0.2)  ;
+  margin-top: 400px;
+}
+
+#box3{
+  background-color: rgba(142, 40, 9, 0.6);
+}
+#backBox3 {
+  background-color: rgba(168, 181, 224, 0.5) ;
+  margin-top: 400px;
+}
+
+
+// rgba(168, 181, 224, 0.5) 
+
+// rgba(212, 115, 5, 0.2)
+
+// rgb(142, 40, 9) - brick red  
+
+.SE-box {
+  height: 650px;
+  width: 1000px;
+  background-color: rgb(205, 73, 179);
+margin-top: -260px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -150px;
+  padding: 20px;
+  border-radius: 50px;
+  position: fixed;
+}
+
+.edu-box {
+  padding: 20px;
+  border-radius: 50px;
+  height: 450px;
+  width: 730px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+  margin-left: -10px;
+  margin-top: -150px;
+  background-color: rgb(168, 181, 224);
+  align-content: center;
+  position: fixed;
+}
+
+.oth-box {
+  width: 1200px;
+  height: 590px;
+  border-radius: 50px;
+  background-color: rgb(142, 40, 9);
+  padding: 20px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+      align-content: center;
+        position: fixed;
+margin-top: -230px;
+margin-left: -240px;
+align-content: center;
+}
+
+
+.close-box{
+  width: 100px;
 
 }
 
-.message {
-  background-color: none;
+.pic {
+  height: 180px;
+  width: 160px;
+  padding: 10px;
+  margin: 10px;
 }
+
+.pics {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 0px;
+  background-image: radial-gradient(circle, rgba(168, 181, 224, 0.9), rgba(168, 181, 224, 0.5), rgba(168, 181, 224, 0));
+  padding-left: 15px;
+
+}
+
+
+#image2 {
+  width: 210px;
+  height: 160px;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+#image6 {
+  width: 180px;
+  padding: 0px;
+  height: 160px;
+  margin-top: 20px;
+}
+
+#image7 {
+  margin-left: -10px;
+}
+
+
