@@ -4,30 +4,24 @@ import { useNavigate } from 'react-router';
 import { Typography } from '@mui/material';
 
 export default function Home() {
-  const navigate = useNavigate();
-  const image = require('../styles/Me3.png');
+  // const navigate = useNavigate();
+  // const image = require('../styles/Me3.png');
 
   return (
-    <Container
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundImage:
-          'radial-gradient(circle, rgba(103, 104, 106, 0.9), rgba(103, 104, 106, 0.6), rgba(103, 104,  106, 0.2) )',
+    <>
+      <div className="bg"></div>
+      <div className="bg bg2"></div>
+      <div className="bg bg3"></div>
+      <Box className="me"></Box>
 
-        // rgb(164,65,24)
-        backgroundSize: 'cover',
-        minWidth: '100vw',
-        minHeight: '100vh',
-        height: '865px',
-        textAlign: 'center',
-        padding: '0px',
-        mt: -5
-      }}
-    >
       <Box className="main">
-        <Typography>
+        <Typography
+          sx={{
+            fontFamily: 'Laila, sans-serif',
+            fontSize: '15.3px',
+            fontWeight: 'bold'
+          }}
+        >
           I am a junior software engineer with a thirst for problem-solving and
           a passion for creative pursuits. My interest in software engineering
           was sparked after I completed a short front-end development course
@@ -48,7 +42,6 @@ export default function Home() {
           environment.
         </Typography>
       </Box>
-      <img className="headshot" src={image} alt="Headshot"></img>
-    </Container>
+    </>
   );
 }

@@ -16,14 +16,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Image } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
-
-// interface Props {
-//   /**
-//    * Injected by the documentation to work in an iframe.
-//    * You won't need it on your project.
-//    */
-//   window?: () => Window;
-// }
+import { padding } from '@mui/system';
+import { buttonBaseClasses } from '@mui/material';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
@@ -82,8 +76,10 @@ export default function Navbar(props: Props) {
             sx={{
               flexGrow: 1,
               display: { xs: 'none', sm: 'block' },
-              fontFamily: 'American Typewriter (serif)',
-              fontSize: '50px'
+              fontFamily: 'Zeyada, cursive',
+              fontSize: '70px',
+              // color: 'rgb(193,210,191)'
+              color: '#94778F'
             }}
           >
             IMOGEN FARR
@@ -92,7 +88,13 @@ export default function Navbar(props: Props) {
             <Button
               onClick={() => navigate('/')}
               className="navButton"
-              sx={{ color: 'white' }}
+              sx={{
+                color: 'white',
+                fontFamily: 'Laila, sans-serif',
+                fontSize: '25px',
+                padding: '15px',
+                fontWeight: 'bold'
+              }}
             >
               WHO AM I
             </Button>
@@ -100,28 +102,39 @@ export default function Navbar(props: Props) {
             <Button
               onClick={() => navigate('/contact')}
               className="navButton"
-              sx={{ color: 'white' }}
+              sx={{
+                color: 'white',
+                fontFamily: 'Laila, sans-serif',
+                fontSize: '25px',
+                padding: '15px',
+                fontWeight: 'bold'
+              }}
             >
               CONTACT
             </Button>
             <Button
-              onClick={() => navigate('/cv')}
-              className="navButton"
-              sx={{ color: 'white' }}
-            >
-              CV
-            </Button>
-            <Button
               onClick={() => navigate('/education&experience')}
               className="navButton"
-              sx={{ color: 'white' }}
+              sx={{
+                color: 'white',
+                fontFamily: 'Laila, sans-serif',
+                fontSize: '25px',
+                padding: '15px',
+                fontWeight: 'bold'
+              }}
             >
               Education & Experience
             </Button>
             <Button
               onClick={() => navigate('/projects')}
               className="navButton"
-              sx={{ color: 'white' }}
+              sx={{
+                color: 'white',
+                fontFamily: 'Laila, sans-serif',
+                fontSize: '25px',
+                padding: '15px',
+                fontWeight: 'bold'
+              }}
             >
               PROJECTS
             </Button>
