@@ -1,24 +1,13 @@
 import { Button, Box } from '@mui/material';
 import { Container } from '@mui/system';
-import { useNavigate } from 'react-router';
 import { Typography } from '@mui/material';
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
+import Typed from 'react-typed';
 
 export default function Projects() {
-  const navigate = useNavigate();
-
-  // const bull = (
-  //   <Box
-  //     component="span"
-  //     sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  //   >
-  //     •
-  //   </Box>
-  // );
-
   return (
     <Container className="hero2">
       <div className="cube2"></div>
@@ -27,6 +16,16 @@ export default function Projects() {
       <div className="cube2"></div>
       <div className="cube2"></div>
       <div className="cube2"></div>
+      <Box id="type-box">
+        <Typed
+          className="typed"
+          strings={['Take a look at some of my General Assembly projects...']}
+          typeSpeed={50}
+          // backSpeed={100}
+          // loop
+        />
+      </Box>
+
       <div className="projects">
         <Card
           className="project"
@@ -201,7 +200,7 @@ export default function Projects() {
           </CardContent>
           <CardActions>
             <a
-              href="https://imogen-farr.github.io/ga-project-1/"
+              href="https://imogens-meme-hub.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -291,7 +290,7 @@ export default function Projects() {
           </CardContent>
           <CardActions>
             <a
-              href="https://imogen-farr.github.io/ga-project-1/"
+              href="https://imogens-book-diary.netlify.app/welcome"
               target="_blank"
               rel="noreferrer"
             >
@@ -311,12 +310,12 @@ export default function Projects() {
           </CardActions>
         </Card>
 
-        <Card
+        {/* <Card
           className="project"
           id="proj4"
           sx={{ borderRadius: '50px', boxShadow: '0 0 10px 5px white' }}
-        >
-          <CardContent>
+        > */}
+        {/* <CardContent>
             <Typography
               sx={{ fontSize: 18, fontFamily: 'Laila, sans-serif', mb: '0' }}
               color="text.secondary"
@@ -381,7 +380,7 @@ export default function Projects() {
           </CardContent>
           <CardActions>
             <a
-              href="https://imogen-farr.github.io/ga-project-1/"
+              href=""
               target="_blank"
               rel="noreferrer"
             >
@@ -400,7 +399,7 @@ export default function Projects() {
               </Button>
             </a>
           </CardActions>
-        </Card>
+        </Card> */}
       </div>
     </Container>
   );

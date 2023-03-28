@@ -1,23 +1,17 @@
-import { Link } from 'react-router-dom';
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { Image } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
-import { padding } from '@mui/system';
-import { buttonBaseClasses } from '@mui/material';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
@@ -56,20 +50,11 @@ export default function Navbar(props: Props) {
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar
-        sx={{ backgroundColor: 'black' }}
+        sx={{ backgroundColor: 'black', paddingBottom: '7px' }}
         component="nav"
         className="navbar"
       >
         <Toolbar>
-          {/* <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton> */}
           <Typography
             variant="h6"
             component="div"
@@ -78,6 +63,7 @@ export default function Navbar(props: Props) {
               display: { xs: 'none', sm: 'block' },
               fontFamily: 'Zeyada, cursive',
               fontSize: '70px',
+              paddingTop: '10px',
               // color: 'rgb(193,210,191)'
               color: '#94778F'
             }}
@@ -92,11 +78,12 @@ export default function Navbar(props: Props) {
                 color: 'white',
                 fontFamily: 'Laila, sans-serif',
                 fontSize: '25px',
-                padding: '15px',
+                // padding: '5px',
                 fontWeight: 'bold'
               }}
             >
-              WHO AM I
+              <div className="break">&#124;&#160;</div>WHO AM I
+              <div className="break">&#160;&#124;</div>
             </Button>
 
             <Button
@@ -106,11 +93,10 @@ export default function Navbar(props: Props) {
                 color: 'white',
                 fontFamily: 'Laila, sans-serif',
                 fontSize: '25px',
-                padding: '15px',
                 fontWeight: 'bold'
               }}
             >
-              CONTACT
+              CONTACT<div className="break">&#160;&#124;</div>
             </Button>
             <Button
               onClick={() => navigate('/education&experience')}
@@ -119,11 +105,11 @@ export default function Navbar(props: Props) {
                 color: 'white',
                 fontFamily: 'Laila, sans-serif',
                 fontSize: '25px',
-                padding: '15px',
                 fontWeight: 'bold'
               }}
             >
               Education & Experience
+              <div className="break">&#160;&#124;</div>
             </Button>
             <Button
               onClick={() => navigate('/projects')}
@@ -132,11 +118,10 @@ export default function Navbar(props: Props) {
                 color: 'white',
                 fontFamily: 'Laila, sans-serif',
                 fontSize: '25px',
-                padding: '15px',
                 fontWeight: 'bold'
               }}
             >
-              PROJECTS
+              PROJECTS<div className="break">&#160;&#124;</div>
             </Button>
           </Box>
         </Toolbar>

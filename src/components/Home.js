@@ -1,18 +1,34 @@
-import { Button, Box } from '@mui/material';
-import { Container } from '@mui/system';
-import { useNavigate } from 'react-router';
+import { Box } from '@mui/material';
 import { Typography } from '@mui/material';
 
 export default function Home() {
-  // const navigate = useNavigate();
-  // const image = require('../styles/Me3.png');
+  const download = () => {
+    fetch('CV.pdf').then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        const alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'CV.pdf';
+        alink.click();
+      });
+    });
+  };
 
   return (
     <>
       <div className="bg"></div>
       <div className="bg bg2"></div>
       <div className="bg bg3"></div>
-      <Box className="me"></Box>
+      <box className="c-glitch">
+        <div className="c-glitch__img"></div>
+        <div className="c-glitch__img"></div>
+        <div className="c-glitch__img"></div>
+        <div className="c-glitch__img"></div>
+        <div className="c-glitch__img"></div>
+      </box>
+      <button onClick={download} className="download">
+        DOWNLOAD CV
+      </button>
 
       <Box className="main">
         <Typography

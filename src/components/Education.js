@@ -1,11 +1,9 @@
 import { Container } from '@mui/system';
-import React, { useState, Component } from 'react';
+import React, { Component } from 'react';
 import { Box } from '@mui/material';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-// import ReactDOM from 'react-dom';
 import song from '../styles/music/Nostalgic-Bossa.mp3';
-import useSound from 'use-sound';
 import image1 from '../styles/photos/potatoes.png';
 import image2 from '../styles/photos/show.png';
 import image3 from '../styles/photos/show2.png';
@@ -34,16 +32,6 @@ class Education extends Component {
     }
     this.setState({ isPlaying: !isPlaying });
   };
-
-  // image1 = require('../styles/photos/potatoes.png');
-  // image2 = require('../styles/photos/show.png');
-  // image3 = require('../styles/photos/show2.png');
-  // image4 = require('../styles/photos/show3.png');
-  // image5 = require('../styles/photos/grounded.png');
-  // image6 = require('../styles/photos/chorus.png');
-  // image7 = require('../styles/photos/lisa.png');
-
-  // [play] = useSound(song);
 
   render() {
     return (
@@ -100,7 +88,9 @@ class Education extends Component {
                     <br />
                     Additional software & tools: Trello, Excalidraw, Miro, Figma
                     <div>
-                      <button onClick={() => close()}>Close</button>
+                      <button className="close-box" onClick={() => close()}>
+                        close
+                      </button>
                     </div>
                   </p>
                 </div>
@@ -178,9 +168,11 @@ class Education extends Component {
                     &#39;projects&#39; section of my page&#41;. I have loved my
                     journey so far, and am inspired to keep learning, designing
                     and coding!
+                    <br />
+                    <br />
                   </p>
                   <button className="close-box" onClick={() => close()}>
-                    Close
+                    close
                   </button>
                 </div>
               )}
@@ -218,7 +210,6 @@ class Education extends Component {
                       &nbsp;
                       <PauseIcon onClick={this.playPause}></PauseIcon>
                     </MovingComponent>
-                    {/* <br /> */}
                     When I am not coding away at my computer, my free time is
                     spent pursuing my love for the Arts. As an avid thespian, I
                     have performed in numerous plays over the years, including
@@ -267,7 +258,10 @@ class Education extends Component {
                     ></img>
                   </div>
                   <div>
-                    <button onClick={() => close()}>Close</button>
+                    <br />
+                    <button className="close-box" onClick={() => close()}>
+                      close
+                    </button>
                   </div>
                 </div>
               )}

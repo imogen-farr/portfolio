@@ -18,6 +18,7 @@
     "axios": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-download-link": "^2.3.0",
     "react-fade": "^1.1.1",
     "react-interactive-blob": "^0.0.1",
     "react-loader-spinner": "^5.3.4",
@@ -26,6 +27,7 @@
     "react-router-dom": "^6.4.3",
     "react-scripts": "^5.0.1",
     "react-swipeable-views": "^0.14.0",
+    "react-typed": "^1.2.0",
     "reactjs-popup": "^2.0.5",
     "sass": "^1.56.1",
     "use-sound": "^4.0.1"
